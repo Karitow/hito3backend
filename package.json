@@ -1,0 +1,41 @@
+{
+  "name": "restobu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "eslintConfig": {
+    "extends": [
+      "./BACKEND/node_modules/standard/eslintrc.json"
+    ],
+    "env": {
+      "jest": true
+    }
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --corage --run"
+  },
+  "keywords": [],
+  "author": "Erick, Piero y Karol",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.0",
+    "pg-format": "^1.0.4",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "standard": "^17.1.2",
+    "vitest": "^2.1.2"
+  },
+  "description": ""
+}
